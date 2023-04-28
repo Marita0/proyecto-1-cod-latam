@@ -4,73 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
     <title>Mariagnys Ovalle</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <div class="flex-header">
-            <a id="logo" href="#inicio">Mariagnys Ovalle</a>
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
-        <div class="flex-nav"></div>
-
+        <a id="logo" href="#inicio">
+            <img src="img/logo-03.png" alt height="40px">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- <div class="clearfix"></div> -->
-
     <main>
-        <section class="name-container">
-            <div class="picture-01">
-                <img class="img-01" src="img/vida.png">
-            </div>
-            <div id="light-color">
+        <section class="caja-inicio">
+            <img class="img-01" src="img/vida.png">
+            <div>
                 <h1>¡Hola, soy Mari!</h1>
                 <p>Mi nombre es Mariagnys, pero me puedes llamar Mari. Nací en Venezuela, allí estudié y me gradué como
                     T.S.U. en
                     <strong>Diseño Gráfico</strong>. Me he especializado en creación de logos, diseños de papelería y
                     gráficas para
                     redes sociales. <a id="link-behance" href="https://www.behance.net/MaryOvalle"
-                        target="_blank">Acá</a> puedes conocer
+                        target="_blank">Acá</a>
+                    puedes conocer
                     un
                     poco de lo que hago como diseñadora gráfica.
                 </p>
-                <br>
                 <p>Emigré hace 2 años a Argentina, un país que me ha encantado por su arquitectura y su gente.
                     Actualmente
                     trabajo
                     en mi área pero me gustaría expandirme a otras y por eso decidí estudiar programación web.</p>
-                <!-- <br>
-                <p>Algo más que puedo decir sobre mi es que soy una persona paciente cuando se trata de enseñar a otros,
-                    así
-                    como
-                    también estoy dispuesta a aprender.</p> -->
+
+                <a class="button" href="doc/CV_MO.pdf" download="cv-mariagnys">Descargar mi CV</a>
             </div>
         </section>
-        <div class="download">
-            <button>
-                <a href="doc/CV_MO.pdf" download="cv-mariagnys">Descargar CV</a>
-            </button>
-        </div>
 
-        <div class="dark-color">
-            <section class="talk-container">
+        <section class="caja-contacto">
+            <article class="hablemos">
                 <h2>¡Hablemos!</h2>
                 <p>Algo más que puedo decir sobre mi es que soy una persona paciente cuando se trata de enseñar a otros,
                     así como también estoy dispuesta a aprender.</p>
-                <br>
-                <p>Lo que más disfruto hacer es dibujar, comer chocolate amargo y pasear en parques para rodearme de la naturaleza.</p>
-            </section>
-        </div>
+                <p>Lo que más disfruto hacer es dibujar, comer chocolate amargo y pasear en parques para rodearme de la
+                    naturaleza.</p>
+            </article>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope fa-2xl"></i>
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                </li>
+            </ul>
 
+        </section>
     </main>
 
     <footer>

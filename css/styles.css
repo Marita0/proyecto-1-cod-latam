@@ -10,14 +10,23 @@
 */
 
 /* Reset */
+
+/* Fondo general: #fbfbfb
+Fondo botón y footer: #af599e
+Fondo de “Hablemos…” en sección contacto:
+rgba(175, 89, 158, 0.3) Textos: #0f0f0f
+Texto botón y footer: #fbfbfb */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
-    font-family: roboto, sans-serif;
+    font-family: 'Lato', sans-serif;;
     color: rgb(62, 62, 62);
+    line-height: 1.2;
 }
 
 /* Para quitar los puntos a los items de listas */
@@ -35,30 +44,41 @@ a {
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 
+ul {
+    display: flex;
+}
 
 body {
-    background-color: #ffc369;
+    background-color: #f9f9f9;
+    font-size: 18px;
     /* background-image: url(img/banner.png) */
 
 }
 
-header {
-    padding-top: 15px;
-    height: 10%;
-    width: 100%;
-    max-width: 100%;
-    position: fixed;
-    z-index: 10px;
-    box-shadow: 0px 1px 10px rgba(34, 34, 34, 0.3);
-    background-color: rgb(221, 135, 255);
+h1{
+    text-align: center;
+    padding: 5%;
+    font-size: 36px;
+    color: #0f0f0f;
 }
 
-.flex-header {
+h2{
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: auto;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    box-shadow: 0px 1px 10px rgba(34, 34, 34, 0.3);
+    background-color: #f5f5f5;
+    padding: 20px;
 }
 
 #logo {
@@ -66,102 +86,100 @@ header {
     color: #36163f;
 }
 
-.menu{
-    margin-left: 50%;
+nav{
     color: rgb(255, 252, 249);
     font-size: 15px;
 }
 
-.menu a:hover {
-    color:  #d9fb5c;
+nav a:hover {
+    color: #ffbd77;
 }
 
-.picture-01{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
+li{
+
+    padding: 10px;
 }
 
 .img-01 {
     max-width: 100%;
-    width: 300px;
+    width: 400px;
     padding: 2%;
-}
-
-h1{
-    text-align: center;
-    padding: 5%;
-    font-size: 30px;
-    color: #3b3b3b;
-}
-
-h2{
-    text-align: center;
-    padding-bottom: 2%;
-}
-
-main {
-    max-width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 5%;
-    background-color: rgb(250, 224, 209);
-}
-
-.name-container {
-    width: 100%;
-    padding: 2% 5%;
+    /* border-radius: 50%; */
 }
 
 #link-behance{
     font-weight:500;
+    color: #36ab99;
 }
 
 #link-behance:hover{
-    color: #5ca9fb;
+    color:#4ed6c2;
 }
 
-.download {
+.caja-inicio, .caja-contacto {
+    padding: 90px 20px 20px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.download{
-    padding: 5%;
-}
-
-button {
-    margin: 0% 5%;
-    padding: 1% 5%;
-    background-color: rgb(239, 87, 176);
-    border-radius: 15px;
-    border-color: rgb(239, 87, 176);
-    color: aliceblue;
-}
-
-.dark-color {
-    margin: 5%;
-    border-radius: 15px;
-    background-color: rgb(163, 226, 197);
-}
-
-.talk-co    ntainer {
-    /* background-color: #ffe48d; */
-    width: 100%;
-    padding: 2% 5%;
     text-align: center;
+}
+
+.caja-inicio {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.caja-contacto {
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+article{
+    background: #fde6c1;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.button {    
+    height:40px;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #36ab99;
+    border-radius: 20px;
+    color: aliceblue;
+    width: max-content;
+    font-size: 20px;
+}
+
+.button:hover {    
+    color: #36ab99;
+    background: transparent;
+    border:  1px solid #36ab99;
+}
+
+i{
+    padding: 20px;
+    cursor: pointer;
+}
+
+i:hover{
+    color:#ffbd77;
 }
 
 footer {
+    width: 100%;
+    height: 90px;
     padding: 5%;
     text-align: center;
+    
+    color: #f9f9f9;
+    background-color: #36ab99;
 }
 
-.clearfix {
-    clear: both;
-}
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
@@ -180,3 +198,23 @@ footer {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+
+/* @media (orientation: landscape) {
+    .caja-inicio {
+        display: flex;
+    }
+} */
+
+@media (orientation: landscape) {
+    .caja-inicio {
+        flex-direction: row;
+        display: flex;
+    }
+}
+
+main > section.caja-inicio > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
